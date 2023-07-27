@@ -21,28 +21,11 @@ struct UserModel: Codable, Equatable {
     }
 }
 
-struct AvatarModel: Codable, Equatable {
-    var path: String
-    var url: String
-    
-    init(path: String, url: String) {
-        self.path = path
-        self.url = url
-    }
-}
-
 extension UserModel {
     private enum CodingKeys: String, CodingKey {
         case id
         case username
         case email
         case about
-    }
-}
-
-extension AvatarModel {
-    private enum CodingKeys: String, CodingKey {
-        case path
-        case url
     }
 }
