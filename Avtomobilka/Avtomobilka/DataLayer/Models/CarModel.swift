@@ -18,7 +18,7 @@ struct CarModel: Codable, Equatable {
     var modelID: Int
     var engineID: Int
     var transmissionID: Int
-    var placeID: String
+    var placeID: String?
     var name: String
     var cityName: String
     var countryName: String
@@ -33,7 +33,7 @@ struct CarModel: Codable, Equatable {
     var engineVolume: String
     var isModerated: Bool
     
-    init(id: Int, forSale: Int, brandName: String, modelName: String, year: Int, price: Double? = nil, brandID: Int, modelID: Int, engineID: Int, transmissionID: Int, placeID: String, name: String, cityName: String, countryName: String, transmissionName: String, placeName: String, images: [ImageModel], inSelectionCount: Int, followersCount: Int, follow: Bool, engine: Double, engineName: String, engineVolume: String, isModerated: Bool) {
+    init(id: Int, forSale: Int, brandName: String, modelName: String, year: Int, price: Double? = nil, brandID: Int, modelID: Int, engineID: Int, transmissionID: Int, placeID: String? = nil, name: String, cityName: String, countryName: String, transmissionName: String, placeName: String, images: [ImageModel], inSelectionCount: Int, followersCount: Int, follow: Bool, engine: Double, engineName: String, engineVolume: String, isModerated: Bool) {
         self.id = id
         self.forSale = forSale
         self.brandName = brandName

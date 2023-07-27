@@ -19,7 +19,7 @@ final class CarModelData: NSObject, Codable {
     var modelID: Int
     var engineID: Int
     var transmissionID: Int
-    var placeID: String
+    var placeID: String?
     var name: String
     var image: String
     var thumbnail: String
@@ -31,7 +31,7 @@ final class CarModelData: NSObject, Codable {
     var images: [ImageModel]
     var engine: String
     
-    init(id: Int, forSale: Int, brandName: String, modelName: String, engineName: String, year: Int, price: Double?, brandID: Int, modelID: Int, engineID: Int, transmissionID: Int, placeID: String, name: String, image: String, thumbnail: String, cityName: String, countryName: String, transmissionName: String, engineVolume: String, placeName: String, images: [ImageModel], engine: String) {
+    init(id: Int, forSale: Int, brandName: String, modelName: String, engineName: String, year: Int, price: Double?, brandID: Int, modelID: Int, engineID: Int, transmissionID: Int, placeID: String? = nil, name: String, image: String, thumbnail: String, cityName: String, countryName: String, transmissionName: String, engineVolume: String, placeName: String, images: [ImageModel], engine: String) {
         self.id = id
         self.forSale = forSale
         self.brandName = brandName

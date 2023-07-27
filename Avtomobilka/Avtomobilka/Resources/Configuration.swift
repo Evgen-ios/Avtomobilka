@@ -9,4 +9,5 @@ import Foundation
 
 public struct Configuration {
     static let baseUrl = "http://am111.05.testing.place/api"
+    static let startPage = 1
 }

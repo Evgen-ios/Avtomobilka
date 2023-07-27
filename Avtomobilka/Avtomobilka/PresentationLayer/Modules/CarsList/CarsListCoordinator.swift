@@ -9,10 +9,12 @@ import DITranquillity
 import UIKit
 
 class CarsListCoordinator: BaseCoordinator<CarsListViewController> {
+    
+    // MARK: - Properties
     private var bag = CancelBag()
     private var window: UIWindow
     
-    // MARK: - Inherited Methods
+    // MARK: - Init
     init(_ container: DIContainer, window: UIWindow) {
         self.window = window
         
@@ -20,10 +22,12 @@ class CarsListCoordinator: BaseCoordinator<CarsListViewController> {
         rootViewController = CarsListAssembly.createModule(container)
     }
     
+    // MARK: - Inherited Methods
     override func start() {
         setupMainController()
     }
     
+    // MARK: - Private Methods
     private func setupMainController() {
         window.changeRootViewController(to: rootViewController)
         window.makeKeyAndVisible()

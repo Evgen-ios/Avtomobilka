@@ -32,6 +32,8 @@
 		7A195D142A72435900510F3D /* ErrorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195D112A72435900510F3D /* ErrorCodes.swift */; };
 		7A195D152A72435900510F3D /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195D122A72435900510F3D /* AppError.swift */; };
 		7A195D172A724B6400510F3D /* Codable + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195D162A724B6400510F3D /* Codable + Ext.swift */; };
+		7A195D1E2A72780700510F3D /* UIScrollView_InfiniteScroll in Frameworks */ = {isa = PBXBuildFile; productRef = 7A195D1D2A72780700510F3D /* UIScrollView_InfiniteScroll */; };
+		7A195D222A72881B00510F3D /* UIImageView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195D212A72881B00510F3D /* UIImageView + Ext.swift */; };
 		7ADE92362A6EA7EB0006453F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADE92352A6EA7EB0006453F /* AppDelegate.swift */; };
 		7ADE923F2A6EA7ED0006453F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ADE923E2A6EA7ED0006453F /* Assets.xcassets */; };
 		7ADE92422A6EA7ED0006453F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADE92402A6EA7ED0006453F /* LaunchScreen.storyboard */; };
@@ -83,6 +85,7 @@
 		7A195D112A72435900510F3D /* ErrorCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCodes.swift; sourceTree = "<group>"; };
 		7A195D122A72435900510F3D /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		7A195D162A724B6400510F3D /* Codable + Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Codable + Ext.swift"; sourceTree = "<group>"; };
+		7A195D212A72881B00510F3D /* UIImageView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Ext.swift"; sourceTree = "<group>"; };
 		7ADE92322A6EA7EB0006453F /* Avtomobilka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avtomobilka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ADE92352A6EA7EB0006453F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ADE923E2A6EA7ED0006453F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,6 +118,7 @@
 				7ADE92672A6F528E0006453F /* DITranquillity in Frameworks */,
 				7ADE926D2A6F57870006453F /* SnapKit in Frameworks */,
 				7ADE929A2A6FE8070006453F /* Moya in Frameworks */,
+				7A195D1E2A72780700510F3D /* UIScrollView_InfiniteScroll in Frameworks */,
 				7A195CD02A71615C00510F3D /* MintLogger in Frameworks */,
 				7ADE92982A6FE8070006453F /* CombineMoya in Frameworks */,
 			);
@@ -268,6 +272,7 @@
 				7A195CDE2A71757000510F3D /* UIView + Ext.swift */,
 				7ADE92702A6F5A2E0006453F /* UIViewController + Ext.swift.swift */,
 				7A195CE02A71854600510F3D /* UIWindow + Ext.swift */,
+				7A195D212A72881B00510F3D /* UIImageView + Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -373,6 +378,7 @@
 				7ADE92972A6FE8070006453F /* CombineMoya */,
 				7ADE92992A6FE8070006453F /* Moya */,
 				7A195CCF2A71615C00510F3D /* MintLogger */,
+				7A195D1D2A72780700510F3D /* UIScrollView_InfiniteScroll */,
 			);
 			productName = Avtomobilka;
 			productReference = 7ADE92322A6EA7EB0006453F /* Avtomobilka.app */;
@@ -407,6 +413,7 @@
 				7ADE926B2A6F57870006453F /* XCRemoteSwiftPackageReference "SnapKit" */,
 				7ADE92962A6FE8070006453F /* XCRemoteSwiftPackageReference "Moya" */,
 				7A195CCE2A71615C00510F3D /* XCRemoteSwiftPackageReference "MintLogger" */,
+				7A195D1C2A72780700510F3D /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScroll" */,
 			);
 			productRefGroup = 7ADE92332A6EA7EB0006453F /* Products */;
 			projectDirPath = "";
@@ -459,6 +466,7 @@
 				7A195D012A721E7B00510F3D /* CarModel.swift in Sources */,
 				7A195CFF2A721CDD00510F3D /* DetailCarModelData.swift in Sources */,
 				7A195D092A723A6900510F3D /* AvatarModel.swift in Sources */,
+				7A195D222A72881B00510F3D /* UIImageView + Ext.swift in Sources */,
 				7A195CE12A71854600510F3D /* UIWindow + Ext.swift in Sources */,
 				7A195CDD2A71750F00510F3D /* UICollectionView + Ext.swift in Sources */,
 				7ADE926A2A6F55510006453F /* Coordinator.swift in Sources */,
@@ -705,6 +713,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		7A195D1C2A72780700510F3D /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScroll" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pronebird/UIScrollView-InfiniteScroll";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		7ADE92652A6F528E0006453F /* XCRemoteSwiftPackageReference "DITranquillity" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ivlevAstef/DITranquillity.git";
@@ -736,6 +752,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7A195CCE2A71615C00510F3D /* XCRemoteSwiftPackageReference "MintLogger" */;
 			productName = MintLogger;
+		};
+		7A195D1D2A72780700510F3D /* UIScrollView_InfiniteScroll */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A195D1C2A72780700510F3D /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScroll" */;
+			productName = UIScrollView_InfiniteScroll;
 		};
 		7ADE92662A6F528E0006453F /* DITranquillity */ = {
 			isa = XCSwiftPackageProductDependency;
