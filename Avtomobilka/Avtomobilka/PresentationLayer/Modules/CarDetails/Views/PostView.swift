@@ -9,6 +9,7 @@ import UIKit
 
 final class PostView: LoadableView {
     
+    // MARK: - Properties
     private lazy var avatar = UIImageView().apply {
         $0.contentMode = .scaleAspectFill
         $0.clipsToBounds = true
@@ -35,15 +36,29 @@ final class PostView: LoadableView {
     }
     
     private lazy var separatedView = UIView().apply {
-        $0.backgroundColor = .systemGray
+        $0.backgroundColor = .systemGray.withAlphaComponent(0.3)
     }
     
+    private lazy var likeView = LikeView()
+    
+    // MARK: - Inherited Methods
+    override func setup() {
+        [avatar, name, message, time, likeView, separatedView].forEach {
+            addSubview($0)
+        }
+        
+        layoutConstraint()
+    }
+    
+    // MARK: - Methods
     func configure(model: PostModelData?) {
         guard let model else { return }
         setAvatar(model: model.author)
+        likeView.configure(model: model)
         name.text = model.author.username
         message.text = model.text
         time.text = model.createdAt
+        
     }
     
     private func setAvatar(model: AuthorModel) {
@@ -51,18 +66,11 @@ final class PostView: LoadableView {
         avatar.load(url: url)
     }
     
-    override func setup() {
-        [avatar, name, message, time, separatedView].forEach {
-            addSubview($0)
-        }
-        
-        layoutConstraint()
-    }
-    
     func getHeight() -> CGFloat {
         message.bounds.size.height
     }
     
+    // MARK: - layoutConstraints
     private func layoutConstraint() {
         avatar.snp.makeConstraints {
             $0.size.equalTo(56)
@@ -86,8 +94,14 @@ final class PostView: LoadableView {
             $0.right.equalToSuperview().inset(8)
         }
         
+        likeView.snp.makeConstraints {
+            $0.top.equalTo(message.snp.bottom).offset(8)
+            $0.left.equalToSuperview().inset(8)
+            $0.height.equalTo(24)
+        }
+        
         separatedView.snp.makeConstraints  {
-            $0.top.equalTo(message.snp.bottom).offset(16)
+            $0.top.equalTo(likeView.snp.bottom).offset(16)
             $0.left.equalToSuperview().inset(2)
             $0.right.equalToSuperview().inset(2)
             $0.height.equalTo(2)

@@ -9,6 +9,7 @@ import UIKit
 
 final class AuthorView: LoadableView {
     
+    // MARK: - Properties
     private lazy var avatar = UIImageView().apply {
         $0.contentMode = .scaleAspectFill
         $0.clipsToBounds = true
@@ -27,6 +28,7 @@ final class AuthorView: LoadableView {
         $0.numberOfLines = 0
     }
     
+    // MARK: - Methods
     func configure(model: UserModel?) {
         guard let model else { return }
         setAvatar(model: model)
@@ -39,6 +41,7 @@ final class AuthorView: LoadableView {
         avatar.load(url: url)
     }
     
+    // MARK: - Inherited Methods
     override func setup() {
         [avatar, name, about].forEach {
             addSubview($0)
@@ -47,6 +50,7 @@ final class AuthorView: LoadableView {
         layoutConstraint()
     }
     
+    // MARK: - layoutConstraints
     private func layoutConstraint() {
         avatar.snp.makeConstraints {
             $0.size.equalTo(55)

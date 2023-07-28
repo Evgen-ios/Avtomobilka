@@ -107,7 +107,7 @@ final class CarDetailsViewController: BaseViewController {
             let height = estimatedLabelHeight(text: $0.text, width: view.safeAreaLayoutGuide.layoutFrame.maxX - 36, font: UIFont.systemFont(ofSize: 13, weight: .regular))
             
             message.snp.remakeConstraints() {
-                $0.height.equalTo(height + 80)
+                $0.height.equalTo(height + 110)
             }
             
             stackView.addArrangedSubview(message)
