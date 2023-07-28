@@ -12,11 +12,8 @@
 ### Screen Record
 * [Video](https://disk.yandex.ru/i/cAXcQzWks5Ygbg)
 
-## Screenshots
+### Screenshots
 ![Screenshots](Avtomobilka/Screenshots/1.png?raw=true)
 ![Screenshots](Avtomobilka/Screenshots/2.png?raw=true)
 ![Screenshots](Avtomobilka/Screenshots/3.png?raw=true)
-
-## Screen Cast
-[Video](https://disk.yandex.ru/i/cAXcQzWks5Ygbg)
 
