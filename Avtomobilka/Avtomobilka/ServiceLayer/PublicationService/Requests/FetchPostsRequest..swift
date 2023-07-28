@@ -1,15 +1,15 @@
 //
-//  FetchDetailsCarRequest.swift
+//  FetchPostsRequest..swift.swift
 //  Avtomobilka
 //
-//  Created by Evgeniy Goncharov on 27.07.2023.
+//  Created by Evgeniy Goncharov on 28.07.2023.
 //
 
 import Foundation
 import Moya
 
-public struct FetchDetailsCarRequest: MoyaTargetType {
-    typealias Response = CarDetailsModelData
+public struct FetchPostsRequest: MoyaTargetType {
+    typealias Response = PostsModelData
 
     public var method: Moya.Method = .get
     public var path: String = ""
@@ -20,6 +20,6 @@ public struct FetchDetailsCarRequest: MoyaTargetType {
     }
 
     init(carID: Int) {
-        path = "v1/car/\(carID)"
+        path = "v1/car/\(carID)/posts"
     }
 }

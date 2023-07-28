@@ -62,6 +62,7 @@ extension CarsListViewModel {
     final class Input {
         var didLoad: PublishedAction<Void> = .init()
         var loadMore: PublishedAction<Void> = .init()
+        var openCarDetails: PublishedAction<Int> = .init()
         var page: Int = 1
     }
     

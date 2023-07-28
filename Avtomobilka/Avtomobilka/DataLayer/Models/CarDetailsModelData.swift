@@ -1,5 +1,5 @@
 //
-//  DetailCarModelData.swift
+//  CarDetailsModelData.swift
 //  Avtomobilka
 //
 //  Created by Evgeniy Goncharov on 27.07.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class DetailCarModelData: NSObject, Codable {
+final class CarDetailsModelData: NSObject, Codable {
     var car: CarModel
     var user: UserModel
     
@@ -17,7 +17,7 @@ final class DetailCarModelData: NSObject, Codable {
     }
 }
 
-extension DetailCarModelData {
+extension CarDetailsModelData {
     private enum CodingKeys: String, CodingKey {
         case car
         case user

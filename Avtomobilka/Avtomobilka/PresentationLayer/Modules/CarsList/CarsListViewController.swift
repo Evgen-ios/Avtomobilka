@@ -83,12 +83,6 @@ final class CarsListViewController: BaseViewController {
                 collectionView.finishInfiniteScroll()
             }
             .store(in: &bag)
-        
-        viewModel.output.$items
-            .sink { [weak self] items in
-                guard let self = self else { return }
-            }
-            .store(in: &bag)
     }
     
     // MARK: - layoutConstraints
@@ -117,5 +111,11 @@ extension CarsListViewController: UICollectionViewDelegate {
         guard let cell = cell as? CarCell else { return }
         let item = viewModel.output.items[indexPath.row]
         cell.configure(item)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = viewModel.output.items[indexPath.row]
+        viewModel.input.openCarDetails.send(item.id)
+        print("\(item.name) selected")
     }
 }

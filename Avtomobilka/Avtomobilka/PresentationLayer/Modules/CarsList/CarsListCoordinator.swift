@@ -7,8 +7,9 @@
 
 import DITranquillity
 import UIKit
+import MintRouter
 
-class CarsListCoordinator: BaseCoordinator<CarsListViewController> {
+class CarsListCoordinator: BaseCoordinator<CarsListViewController>, BackRoute {
     
     // MARK: - Properties
     private var bag = CancelBag()
@@ -17,9 +18,14 @@ class CarsListCoordinator: BaseCoordinator<CarsListViewController> {
     // MARK: - Init
     init(_ container: DIContainer, window: UIWindow) {
         self.window = window
-        
         super.init(container)
         rootViewController = CarsListAssembly.createModule(container)
+        
+        rootViewController.viewModel.input.openCarDetails.publisher
+            .sink { [weak self] carID in
+                self?.openCarDetails(carID: carID)
+            }
+            .store(in: &bag)
     }
     
     // MARK: - Inherited Methods
@@ -30,8 +36,15 @@ class CarsListCoordinator: BaseCoordinator<CarsListViewController> {
     // MARK: - Private Methods
     private func setupMainController() {
         window.changeRootViewController(to: rootViewController)
+        window.rootViewController = SwipeNavigationController(rootViewController: self.rootViewController) 
         window.makeKeyAndVisible()
     }
-
+    
+    private func openCarDetails(carID: Int) {
+        let coordinator = CarDetailsCoordinator(container, carID: carID)
+        coordinator.controller.hidesBottomBarWhenPushed = true
+        PushRouter(target: coordinator.controller, parent: rootViewController).move()
+        coordinate(to: coordinator)
+    }
 }
 

@@ -30,7 +30,8 @@ private class ServicesPart: DIPart {
 
 private class PresentersPart: DIPart {
     static let parts: [DIPart.Type] = [
-        CarsListPart.self
+        CarsListPart.self,
+        CarDetailsPart.self
     ]
 
     static func load(container: DIContainer) {

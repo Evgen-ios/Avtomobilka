@@ -7,20 +7,18 @@
 
 import Foundation
 
-typealias PostsModelData = [PostModelData]
-
 struct PostModelData: Codable, Equatable {
     var id: Int
     var text: String
-    var likeCount: String
+    var likeCount: Int
     var createdAt: String
     var commentCount: Int
     var img: String
     var author: AuthorModel
-    var autoCount: Int
-    var mainAutoName: String
+    var autoCount: Int?
+    var mainAutoName: String?
     
-    init(id: Int, text: String, like_count: String, created_at: String, comment_count: Int, img: String, author: AuthorModel, auto_count: Int, main_auto_name: String) {
+    init(id: Int, text: String, like_count: Int, created_at: String, comment_count: Int, img: String, author: AuthorModel, auto_count: Int? = nil, main_auto_name: String? = nil) {
         self.id = id
         self.text = text
         self.likeCount = like_count

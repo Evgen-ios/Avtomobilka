@@ -21,7 +21,8 @@ class PublicationServicePart: DIPart {
 
 protocol PublicationService {
     func FetchCars(page: Int) -> AnyPublisher<[CarModelData], AppError>
-    func FetchDetailCar(carID: Int) -> AnyPublisher<DetailCarModelData, AppError>
+    func FetchDetailCar(carID: Int) -> AnyPublisher<CarDetailsModelData, AppError>
+    func FetchPosts(carID: Int) -> AnyPublisher<PostsModelData, AppError>
 }
 
 final class PublicationServiceImp: PublicationService {
@@ -32,8 +33,13 @@ final class PublicationServiceImp: PublicationService {
         return moyaProvider.request(request)
     }
     
-    func FetchDetailCar(carID: Int) -> AnyPublisher<DetailCarModelData, AppError> {
-        let request = FetchDetailCarRequest(carID: carID)
+    func FetchDetailCar(carID: Int) -> AnyPublisher<CarDetailsModelData, AppError> {
+        let request = FetchDetailsCarRequest(carID: carID)
+        return moyaProvider.request(request)
+    }
+    
+    func FetchPosts(carID: Int) -> AnyPublisher<PostsModelData, AppError> {
+        let request = FetchPostsRequest(carID: carID)
         return moyaProvider.request(request)
     }
     

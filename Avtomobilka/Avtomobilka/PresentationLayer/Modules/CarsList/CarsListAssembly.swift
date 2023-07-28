@@ -16,10 +16,10 @@ final class CarsListPart: DIPart {
         
         container.register {
             CarsListViewController.loadFromNib()
-            }
-            .as(CarsListViewController.self)
-            .injection({ $0.viewModel = $1 })
-            .lifetime(.objectGraph)
+        }
+        .as(CarsListViewController.self)
+        .injection({ $0.viewModel = $1 })
+        .lifetime(.objectGraph)
     }
 }
 

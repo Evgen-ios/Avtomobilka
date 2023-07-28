@@ -64,7 +64,7 @@ final class CarCell: LoadableCollectionViewCell {
         }
         
         brandNameLabel.snp.makeConstraints {
-            $0.bottom.equalToSuperview().inset(8)
+            $0.bottom.equalToSuperview().inset(16)
             $0.left.equalToSuperview().inset(16)
             $0.right.equalToSuperview().inset(16)
         }

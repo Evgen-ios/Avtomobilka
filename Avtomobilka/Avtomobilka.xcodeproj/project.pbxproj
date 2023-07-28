@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A166E3F2A7365A800E5B917 /* MintRouter in Frameworks */ = {isa = PBXBuildFile; productRef = 7A166E3E2A7365A800E5B917 /* MintRouter */; };
+		7A166E4A2A737EA600E5B917 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A166E492A737EA600E5B917 /* BaseNavigationController.swift */; };
+		7A166E4C2A73814700E5B917 /* FetchPostsRequest..swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A166E4B2A73814700E5B917 /* FetchPostsRequest..swift */; };
+		7A166E4E2A73862400E5B917 /* PostsModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A166E4D2A73862400E5B917 /* PostsModelData.swift */; };
 		7A195CCD2A715D6C00510F3D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195CCC2A715D6C00510F3D /* AppCoordinator.swift */; };
 		7A195CD02A71615C00510F3D /* MintLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 7A195CCF2A71615C00510F3D /* MintLogger */; };
 		7A195CD22A716B6200510F3D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195CD12A716B6200510F3D /* BaseViewController.swift */; };
@@ -21,7 +25,7 @@
 		7A195CF42A72175100510F3D /* PublicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195CE92A72175100510F3D /* PublicationService.swift */; };
 		7A195CF52A72175100510F3D /* FetchCarsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195CEB2A72175100510F3D /* FetchCarsRequest.swift */; };
 		7A195CF62A72175100510F3D /* FetchDetailCarRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195CEC2A72175100510F3D /* FetchDetailCarRequest.swift */; };
-		7A195CFF2A721CDD00510F3D /* DetailCarModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195CFE2A721CDD00510F3D /* DetailCarModelData.swift */; };
+		7A195CFF2A721CDD00510F3D /* CarDetailsModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195CFE2A721CDD00510F3D /* CarDetailsModelData.swift */; };
 		7A195D012A721E7B00510F3D /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195D002A721E7B00510F3D /* CarModel.swift */; };
 		7A195D032A7224E500510F3D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195D022A7224E500510F3D /* UserModel.swift */; };
 		7A195D052A72382A00510F3D /* PostModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195D042A72382A00510F3D /* PostModelData.swift */; };
@@ -34,6 +38,11 @@
 		7A195D172A724B6400510F3D /* Codable + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195D162A724B6400510F3D /* Codable + Ext.swift */; };
 		7A195D1E2A72780700510F3D /* UIScrollView_InfiniteScroll in Frameworks */ = {isa = PBXBuildFile; productRef = 7A195D1D2A72780700510F3D /* UIScrollView_InfiniteScroll */; };
 		7A195D222A72881B00510F3D /* UIImageView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195D212A72881B00510F3D /* UIImageView + Ext.swift */; };
+		7A195D252A72AE9600510F3D /* CarDetailsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195D242A72AE9600510F3D /* CarDetailsAssembly.swift */; };
+		7A195D272A72AEB000510F3D /* CarDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195D262A72AEB000510F3D /* CarDetailsCoordinator.swift */; };
+		7A195D292A72AEE200510F3D /* CarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195D282A72AEE200510F3D /* CarDetailsViewController.swift */; };
+		7A195D2B2A72AF0500510F3D /* CarDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195D2A2A72AF0500510F3D /* CarDetailsViewModel.swift */; };
+		7A195D302A73499100510F3D /* CarImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195D2F2A73499100510F3D /* CarImageCell.swift */; };
 		7ADE92362A6EA7EB0006453F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADE92352A6EA7EB0006453F /* AppDelegate.swift */; };
 		7ADE923F2A6EA7ED0006453F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ADE923E2A6EA7ED0006453F /* Assets.xcassets */; };
 		7ADE92422A6EA7ED0006453F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADE92402A6EA7ED0006453F /* LaunchScreen.storyboard */; };
@@ -61,6 +70,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A166E492A737EA600E5B917 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		7A166E4B2A73814700E5B917 /* FetchPostsRequest..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPostsRequest..swift; sourceTree = "<group>"; };
+		7A166E4D2A73862400E5B917 /* PostsModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsModelData.swift; sourceTree = "<group>"; };
 		7A195CCC2A715D6C00510F3D /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		7A195CD12A716B6200510F3D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7A195CD32A716C0800510F3D /* NSObject + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject + Ext.swift"; sourceTree = "<group>"; };
@@ -74,7 +86,7 @@
 		7A195CE92A72175100510F3D /* PublicationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicationService.swift; sourceTree = "<group>"; };
 		7A195CEB2A72175100510F3D /* FetchCarsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchCarsRequest.swift; sourceTree = "<group>"; };
 		7A195CEC2A72175100510F3D /* FetchDetailCarRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchDetailCarRequest.swift; sourceTree = "<group>"; };
-		7A195CFE2A721CDD00510F3D /* DetailCarModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCarModelData.swift; sourceTree = "<group>"; };
+		7A195CFE2A721CDD00510F3D /* CarDetailsModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsModelData.swift; sourceTree = "<group>"; };
 		7A195D002A721E7B00510F3D /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
 		7A195D022A7224E500510F3D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		7A195D042A72382A00510F3D /* PostModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModelData.swift; sourceTree = "<group>"; };
@@ -86,6 +98,11 @@
 		7A195D122A72435900510F3D /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		7A195D162A724B6400510F3D /* Codable + Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Codable + Ext.swift"; sourceTree = "<group>"; };
 		7A195D212A72881B00510F3D /* UIImageView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Ext.swift"; sourceTree = "<group>"; };
+		7A195D242A72AE9600510F3D /* CarDetailsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsAssembly.swift; sourceTree = "<group>"; };
+		7A195D262A72AEB000510F3D /* CarDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsCoordinator.swift; sourceTree = "<group>"; };
+		7A195D282A72AEE200510F3D /* CarDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewController.swift; sourceTree = "<group>"; };
+		7A195D2A2A72AF0500510F3D /* CarDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewModel.swift; sourceTree = "<group>"; };
+		7A195D2F2A73499100510F3D /* CarImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarImageCell.swift; sourceTree = "<group>"; };
 		7ADE92322A6EA7EB0006453F /* Avtomobilka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avtomobilka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ADE92352A6EA7EB0006453F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ADE923E2A6EA7ED0006453F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,6 +136,7 @@
 				7ADE926D2A6F57870006453F /* SnapKit in Frameworks */,
 				7ADE929A2A6FE8070006453F /* Moya in Frameworks */,
 				7A195D1E2A72780700510F3D /* UIScrollView_InfiniteScroll in Frameworks */,
+				7A166E3F2A7365A800E5B917 /* MintRouter in Frameworks */,
 				7A195CD02A71615C00510F3D /* MintLogger in Frameworks */,
 				7ADE92982A6FE8070006453F /* CombineMoya in Frameworks */,
 			);
@@ -184,6 +202,7 @@
 			children = (
 				7A195CEB2A72175100510F3D /* FetchCarsRequest.swift */,
 				7A195CEC2A72175100510F3D /* FetchDetailCarRequest.swift */,
+				7A166E4B2A73814700E5B917 /* FetchPostsRequest..swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -206,6 +225,26 @@
 				7A195D112A72435900510F3D /* ErrorCodes.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		7A195D232A72AE3000510F3D /* CarDetails */ = {
+			isa = PBXGroup;
+			children = (
+				7A195D2E2A73497200510F3D /* Cell */,
+				7A195D242A72AE9600510F3D /* CarDetailsAssembly.swift */,
+				7A195D262A72AEB000510F3D /* CarDetailsCoordinator.swift */,
+				7A195D282A72AEE200510F3D /* CarDetailsViewController.swift */,
+				7A195D2A2A72AF0500510F3D /* CarDetailsViewModel.swift */,
+			);
+			path = CarDetails;
+			sourceTree = "<group>";
+		};
+		7A195D2E2A73497200510F3D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7A195D2F2A73499100510F3D /* CarImageCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		7ADE92292A6EA7EB0006453F = {
@@ -252,11 +291,12 @@
 		7ADE924F2A6EAD490006453F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7A195CFE2A721CDD00510F3D /* CarDetailsModelData.swift */,
 				7A195D002A721E7B00510F3D /* CarModel.swift */,
 				7ADE92502A6EC6AF0006453F /* CarModelData.swift */,
-				7A195CFE2A721CDD00510F3D /* DetailCarModelData.swift */,
 				7ADE92522A6EC9690006453F /* ImageModel.swift */,
 				7A195D042A72382A00510F3D /* PostModelData.swift */,
+				7A166E4D2A73862400E5B917 /* PostsModelData.swift */,
 				7A195D0A2A723BA600510F3D /* UserModel */,
 			);
 			path = Models;
@@ -289,6 +329,7 @@
 		7ADE92582A6F4D6D0006453F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				7A195D232A72AE3000510F3D /* CarDetails */,
 				7ADE925B2A6F4DBD0006453F /* CarsList */,
 			);
 			path = Modules;
@@ -310,6 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				7A195CD12A716B6200510F3D /* BaseViewController.swift */,
+				7A166E492A737EA600E5B917 /* BaseNavigationController.swift */,
 				7ADE92692A6F55510006453F /* Coordinator.swift */,
 				7A195CD82A7171C300510F3D /* LoadableCollectionViewCell.swift */,
 				7A195CDA2A71745E00510F3D /* PublishedProperty.swift */,
@@ -379,6 +421,7 @@
 				7ADE92992A6FE8070006453F /* Moya */,
 				7A195CCF2A71615C00510F3D /* MintLogger */,
 				7A195D1D2A72780700510F3D /* UIScrollView_InfiniteScroll */,
+				7A166E3E2A7365A800E5B917 /* MintRouter */,
 			);
 			productName = Avtomobilka;
 			productReference = 7ADE92322A6EA7EB0006453F /* Avtomobilka.app */;
@@ -414,6 +457,7 @@
 				7ADE92962A6FE8070006453F /* XCRemoteSwiftPackageReference "Moya" */,
 				7A195CCE2A71615C00510F3D /* XCRemoteSwiftPackageReference "MintLogger" */,
 				7A195D1C2A72780700510F3D /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScroll" */,
+				7A166E3D2A7365A800E5B917 /* XCRemoteSwiftPackageReference "MintRouter" */,
 			);
 			productRefGroup = 7ADE92332A6EA7EB0006453F /* Products */;
 			projectDirPath = "";
@@ -444,27 +488,34 @@
 			files = (
 				7ADE928E2A6FE5320006453F /* MoyaAPIRequest.swift in Sources */,
 				7A195CD42A716C0800510F3D /* NSObject + Ext.swift in Sources */,
+				7A195D2B2A72AF0500510F3D /* CarDetailsViewModel.swift in Sources */,
 				7ADE92812A6FE40F0006453F /* AppFramework.swift in Sources */,
 				7A195CF52A72175100510F3D /* FetchCarsRequest.swift in Sources */,
 				7ADE92952A6FE7910006453F /* MainAppCoordinator.swift in Sources */,
+				7A195D302A73499100510F3D /* CarImageCell.swift in Sources */,
+				7A195D252A72AE9600510F3D /* CarDetailsAssembly.swift in Sources */,
+				7A166E4A2A737EA600E5B917 /* BaseNavigationController.swift in Sources */,
 				7ADE925A2A6F4DB70006453F /* CarsListAssembly.swift in Sources */,
 				7A195D072A7239E300510F3D /* AuthorModel.swift in Sources */,
 				7A195D172A724B6400510F3D /* Codable + Ext.swift in Sources */,
 				7A195D142A72435900510F3D /* ErrorCodes.swift in Sources */,
 				7A195CD72A71711C00510F3D /* CarCell.swift in Sources */,
+				7A195D292A72AEE200510F3D /* CarDetailsViewController.swift in Sources */,
 				7A195CF42A72175100510F3D /* PublicationService.swift in Sources */,
 				7A195CF62A72175100510F3D /* FetchDetailCarRequest.swift in Sources */,
 				7ADE92532A6EC9690006453F /* ImageModel.swift in Sources */,
+				7A195D272A72AEB000510F3D /* CarDetailsCoordinator.swift in Sources */,
 				7A195D152A72435900510F3D /* AppError.swift in Sources */,
 				7A195D032A7224E500510F3D /* UserModel.swift in Sources */,
 				7A195CCD2A715D6C00510F3D /* AppCoordinator.swift in Sources */,
 				7ADE928A2A6FE5320006453F /* Mapping.swift in Sources */,
 				7ADE926F2A6F58740006453F /* Combine + Ext.swift in Sources */,
 				7ADE92362A6EA7EB0006453F /* AppDelegate.swift in Sources */,
+				7A166E4E2A73862400E5B917 /* PostsModelData.swift in Sources */,
 				7ADE92512A6EC6AF0006453F /* CarModelData.swift in Sources */,
 				7ADE925D2A6F4E100006453F /* CarsListCoordinator.swift in Sources */,
 				7A195D012A721E7B00510F3D /* CarModel.swift in Sources */,
-				7A195CFF2A721CDD00510F3D /* DetailCarModelData.swift in Sources */,
+				7A195CFF2A721CDD00510F3D /* CarDetailsModelData.swift in Sources */,
 				7A195D092A723A6900510F3D /* AvatarModel.swift in Sources */,
 				7A195D222A72881B00510F3D /* UIImageView + Ext.swift in Sources */,
 				7A195CE12A71854600510F3D /* UIWindow + Ext.swift in Sources */,
@@ -477,6 +528,7 @@
 				7ADE92712A6F5A2E0006453F /* UIViewController + Ext.swift.swift in Sources */,
 				7ADE925F2A6F4E300006453F /* CarsListViewController.swift in Sources */,
 				7A195CD92A7171C300510F3D /* LoadableCollectionViewCell.swift in Sources */,
+				7A166E4C2A73814700E5B917 /* FetchPostsRequest..swift in Sources */,
 				7A195D132A72435900510F3D /* ApiError.swift in Sources */,
 				7A195CDF2A71757000510F3D /* UIView + Ext.swift in Sources */,
 				7ADE928B2A6FE5320006453F /* Session + Ext.swift in Sources */,
@@ -705,6 +757,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7A166E3D2A7365A800E5B917 /* XCRemoteSwiftPackageReference "MintRouter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/golovkinV/MintRouter.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		7A195CCE2A71615C00510F3D /* XCRemoteSwiftPackageReference "MintLogger" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/golovkinV/MintLogger";
@@ -748,6 +808,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7A166E3E2A7365A800E5B917 /* MintRouter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A166E3D2A7365A800E5B917 /* XCRemoteSwiftPackageReference "MintRouter" */;
+			productName = MintRouter;
+		};
 		7A195CCF2A71615C00510F3D /* MintLogger */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7A195CCE2A71615C00510F3D /* XCRemoteSwiftPackageReference "MintLogger" */;
