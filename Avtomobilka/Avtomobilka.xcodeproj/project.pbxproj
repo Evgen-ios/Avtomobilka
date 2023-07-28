@@ -47,6 +47,9 @@
 		7A195D2B2A72AF0500510F3D /* CarDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195D2A2A72AF0500510F3D /* CarDetailsViewModel.swift */; };
 		7A195D302A73499100510F3D /* CarImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195D2F2A73499100510F3D /* CarImageCell.swift */; };
 		7A86F0302A7408F800AECA56 /* LikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A86F02F2A7408F800AECA56 /* LikeView.swift */; };
+		7A86F03C2A74245300AECA56 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A86F0392A74245200AECA56 /* 3.png */; };
+		7A86F03D2A74245300AECA56 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A86F03A2A74245300AECA56 /* 1.png */; };
+		7A86F03E2A74245300AECA56 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A86F03B2A74245300AECA56 /* 2.png */; };
 		7ADE92362A6EA7EB0006453F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADE92352A6EA7EB0006453F /* AppDelegate.swift */; };
 		7ADE923F2A6EA7ED0006453F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ADE923E2A6EA7ED0006453F /* Assets.xcassets */; };
 		7ADE92422A6EA7ED0006453F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADE92402A6EA7ED0006453F /* LaunchScreen.storyboard */; };
@@ -110,6 +113,9 @@
 		7A195D2A2A72AF0500510F3D /* CarDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewModel.swift; sourceTree = "<group>"; };
 		7A195D2F2A73499100510F3D /* CarImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarImageCell.swift; sourceTree = "<group>"; };
 		7A86F02F2A7408F800AECA56 /* LikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeView.swift; sourceTree = "<group>"; };
+		7A86F0392A74245200AECA56 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3.png; path = ../../../../3.png; sourceTree = "<group>"; };
+		7A86F03A2A74245300AECA56 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = ../../../../1.png; sourceTree = "<group>"; };
+		7A86F03B2A74245300AECA56 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = ../../../../2.png; sourceTree = "<group>"; };
 		7ADE92322A6EA7EB0006453F /* Avtomobilka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avtomobilka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ADE92352A6EA7EB0006453F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ADE923E2A6EA7ED0006453F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -266,9 +272,20 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		7A86F0322A74219A00AECA56 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				7A86F03A2A74245300AECA56 /* 1.png */,
+				7A86F03B2A74245300AECA56 /* 2.png */,
+				7A86F0392A74245200AECA56 /* 3.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		7ADE92292A6EA7EB0006453F = {
 			isa = PBXGroup;
 			children = (
+				7A86F0322A74219A00AECA56 /* Screenshots */,
 				7ADE92342A6EA7EB0006453F /* Avtomobilka */,
 				7ADE92332A6EA7EB0006453F /* Products */,
 			);
@@ -494,9 +511,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A86F03D2A74245300AECA56 /* 1.png in Resources */,
 				7A195CE32A71901F00510F3D /* Main.storyboard in Resources */,
 				7ADE92422A6EA7ED0006453F /* LaunchScreen.storyboard in Resources */,
 				7ADE923F2A6EA7ED0006453F /* Assets.xcassets in Resources */,
+				7A86F03E2A74245300AECA56 /* 2.png in Resources */,
+				7A86F03C2A74245300AECA56 /* 3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
