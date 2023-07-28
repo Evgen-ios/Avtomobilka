@@ -115,7 +115,7 @@ extension CarsListViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let item = viewModel.output.items[indexPath.row]
-        viewModel.input.openCarDetails.send(item.id)
+        viewModel.input.openCarDetails.send(item)
         print("\(item.name) selected")
     }
 }

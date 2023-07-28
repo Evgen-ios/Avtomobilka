@@ -25,6 +25,8 @@ final class CarCell: LoadableCollectionViewCell {
     private lazy var photoImageView = UIImageView().apply {
         $0.contentMode = .scaleAspectFill
         $0.backgroundColor = .lightGray.withAlphaComponent(0.2)
+        $0.layer.cornerRadius = 16
+        $0.clipsToBounds = true
     }
     
     // MARK: - Inherited Methods
@@ -34,10 +36,6 @@ final class CarCell: LoadableCollectionViewCell {
         [photoImageView, brandNameLabel].forEach {
             addSubview($0)
         }
-        
-        photoImageView.layer.cornerRadius = 16
-        photoImageView.clipsToBounds = true
-        
         layoutConstraints()
         bind()
     }

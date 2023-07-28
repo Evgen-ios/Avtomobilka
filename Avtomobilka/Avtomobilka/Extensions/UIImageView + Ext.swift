@@ -6,17 +6,16 @@
 //
 
 import UIKit
+import SDWebImage
 
 extension UIImageView {
-    func load(url: URL) {
-        DispatchQueue.global().async { [weak self] in
-            if let data = try? Data(contentsOf: url) {
-                if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self?.image = image
-                    }
-                }
-            }
+    func load(url: URL?, placeholder: UIImage? = nil) {
+        
+        self.image = placeholder
+        let options: SDWebImageOptions =  [.allowInvalidSSLCertificates, .retryFailed, .continueInBackground]
+        SDWebImageManager.shared.loadImage(with: url, options: options, progress: nil) { image, data, error, cacheType, completed, url in
+            guard let image else { return }
+            self.image = image
         }
     }
 }

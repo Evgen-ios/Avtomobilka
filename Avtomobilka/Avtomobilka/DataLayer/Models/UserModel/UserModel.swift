@@ -12,12 +12,14 @@ struct UserModel: Codable, Equatable {
     var username: String
     var email: String?
     var about: String?
+    var avatar: AvatarModel
     
-    init(id: Int, username: String, email: String? = nil, about: String? = nil) {
+    init(id: Int, username: String, email: String? = nil, about: String? = nil, avatar: AvatarModel) {
         self.id = id
         self.username = username
         self.email = email
         self.about = about
+        self.avatar = avatar
     }
 }
 
@@ -27,5 +29,6 @@ extension UserModel {
         case username
         case email
         case about
+        case avatar
     }
 }

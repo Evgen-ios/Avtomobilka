@@ -29,7 +29,7 @@ final class CarsListViewModel {
         input.didLoad.publisher
             .sink { [weak self] _ in
                 guard let self = self else { return }
-                self.getItems(page: self.input.page)
+                input.loadMore.send()
             }
             .store(in: &bag)
         
@@ -62,7 +62,7 @@ extension CarsListViewModel {
     final class Input {
         var didLoad: PublishedAction<Void> = .init()
         var loadMore: PublishedAction<Void> = .init()
-        var openCarDetails: PublishedAction<Int> = .init()
+        var openCarDetails: PublishedAction<CarModelData> = .init()
         var page: Int = 1
     }
     

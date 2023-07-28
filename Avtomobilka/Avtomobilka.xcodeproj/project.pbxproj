@@ -11,12 +11,15 @@
 		7A166E4A2A737EA600E5B917 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A166E492A737EA600E5B917 /* BaseNavigationController.swift */; };
 		7A166E4C2A73814700E5B917 /* FetchPostsRequest..swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A166E4B2A73814700E5B917 /* FetchPostsRequest..swift */; };
 		7A166E4E2A73862400E5B917 /* PostsModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A166E4D2A73862400E5B917 /* PostsModelData.swift */; };
+		7A166E512A73A03D00E5B917 /* AuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A166E502A73A03D00E5B917 /* AuthorView.swift */; };
+		7A166E542A73B0CF00E5B917 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7A166E532A73B0CF00E5B917 /* SDWebImage */; };
+		7A166E582A73B9AD00E5B917 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A166E572A73B9AD00E5B917 /* PostView.swift */; };
 		7A195CCD2A715D6C00510F3D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195CCC2A715D6C00510F3D /* AppCoordinator.swift */; };
 		7A195CD02A71615C00510F3D /* MintLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 7A195CCF2A71615C00510F3D /* MintLogger */; };
 		7A195CD22A716B6200510F3D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195CD12A716B6200510F3D /* BaseViewController.swift */; };
 		7A195CD42A716C0800510F3D /* NSObject + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195CD32A716C0800510F3D /* NSObject + Ext.swift */; };
 		7A195CD72A71711C00510F3D /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195CD62A71711C00510F3D /* CarCell.swift */; };
-		7A195CD92A7171C300510F3D /* LoadableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195CD82A7171C300510F3D /* LoadableCollectionViewCell.swift */; };
+		7A195CD92A7171C300510F3D /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195CD82A7171C300510F3D /* Loadable.swift */; };
 		7A195CDB2A71745E00510F3D /* PublishedProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195CDA2A71745E00510F3D /* PublishedProperty.swift */; };
 		7A195CDD2A71750F00510F3D /* UICollectionView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195CDC2A71750F00510F3D /* UICollectionView + Ext.swift */; };
 		7A195CDF2A71757000510F3D /* UIView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195CDE2A71757000510F3D /* UIView + Ext.swift */; };
@@ -73,11 +76,13 @@
 		7A166E492A737EA600E5B917 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		7A166E4B2A73814700E5B917 /* FetchPostsRequest..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPostsRequest..swift; sourceTree = "<group>"; };
 		7A166E4D2A73862400E5B917 /* PostsModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsModelData.swift; sourceTree = "<group>"; };
+		7A166E502A73A03D00E5B917 /* AuthorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorView.swift; sourceTree = "<group>"; };
+		7A166E572A73B9AD00E5B917 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		7A195CCC2A715D6C00510F3D /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		7A195CD12A716B6200510F3D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7A195CD32A716C0800510F3D /* NSObject + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject + Ext.swift"; sourceTree = "<group>"; };
 		7A195CD62A71711C00510F3D /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
-		7A195CD82A7171C300510F3D /* LoadableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableCollectionViewCell.swift; sourceTree = "<group>"; };
+		7A195CD82A7171C300510F3D /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		7A195CDA2A71745E00510F3D /* PublishedProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishedProperty.swift; sourceTree = "<group>"; };
 		7A195CDC2A71750F00510F3D /* UICollectionView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + Ext.swift"; sourceTree = "<group>"; };
 		7A195CDE2A71757000510F3D /* UIView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Ext.swift"; sourceTree = "<group>"; };
@@ -134,6 +139,7 @@
 			files = (
 				7ADE92672A6F528E0006453F /* DITranquillity in Frameworks */,
 				7ADE926D2A6F57870006453F /* SnapKit in Frameworks */,
+				7A166E542A73B0CF00E5B917 /* SDWebImage in Frameworks */,
 				7ADE929A2A6FE8070006453F /* Moya in Frameworks */,
 				7A195D1E2A72780700510F3D /* UIScrollView_InfiniteScroll in Frameworks */,
 				7A166E3F2A7365A800E5B917 /* MintRouter in Frameworks */,
@@ -145,6 +151,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A166E4F2A73A02500E5B917 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A166E502A73A03D00E5B917 /* AuthorView.swift */,
+				7A166E572A73B9AD00E5B917 /* PostView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7A195CD52A71710A00510F3D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +245,7 @@
 		7A195D232A72AE3000510F3D /* CarDetails */ = {
 			isa = PBXGroup;
 			children = (
+				7A166E4F2A73A02500E5B917 /* Views */,
 				7A195D2E2A73497200510F3D /* Cell */,
 				7A195D242A72AE9600510F3D /* CarDetailsAssembly.swift */,
 				7A195D262A72AEB000510F3D /* CarDetailsCoordinator.swift */,
@@ -353,7 +369,7 @@
 				7A195CD12A716B6200510F3D /* BaseViewController.swift */,
 				7A166E492A737EA600E5B917 /* BaseNavigationController.swift */,
 				7ADE92692A6F55510006453F /* Coordinator.swift */,
-				7A195CD82A7171C300510F3D /* LoadableCollectionViewCell.swift */,
+				7A195CD82A7171C300510F3D /* Loadable.swift */,
 				7A195CDA2A71745E00510F3D /* PublishedProperty.swift */,
 			);
 			path = Classes;
@@ -422,6 +438,7 @@
 				7A195CCF2A71615C00510F3D /* MintLogger */,
 				7A195D1D2A72780700510F3D /* UIScrollView_InfiniteScroll */,
 				7A166E3E2A7365A800E5B917 /* MintRouter */,
+				7A166E532A73B0CF00E5B917 /* SDWebImage */,
 			);
 			productName = Avtomobilka;
 			productReference = 7ADE92322A6EA7EB0006453F /* Avtomobilka.app */;
@@ -458,6 +475,7 @@
 				7A195CCE2A71615C00510F3D /* XCRemoteSwiftPackageReference "MintLogger" */,
 				7A195D1C2A72780700510F3D /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScroll" */,
 				7A166E3D2A7365A800E5B917 /* XCRemoteSwiftPackageReference "MintRouter" */,
+				7A166E522A73B0CF00E5B917 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 7ADE92332A6EA7EB0006453F /* Products */;
 			projectDirPath = "";
@@ -518,6 +536,7 @@
 				7A195CFF2A721CDD00510F3D /* CarDetailsModelData.swift in Sources */,
 				7A195D092A723A6900510F3D /* AvatarModel.swift in Sources */,
 				7A195D222A72881B00510F3D /* UIImageView + Ext.swift in Sources */,
+				7A166E512A73A03D00E5B917 /* AuthorView.swift in Sources */,
 				7A195CE12A71854600510F3D /* UIWindow + Ext.swift in Sources */,
 				7A195CDD2A71750F00510F3D /* UICollectionView + Ext.swift in Sources */,
 				7ADE926A2A6F55510006453F /* Coordinator.swift in Sources */,
@@ -527,7 +546,7 @@
 				7A195CDB2A71745E00510F3D /* PublishedProperty.swift in Sources */,
 				7ADE92712A6F5A2E0006453F /* UIViewController + Ext.swift.swift in Sources */,
 				7ADE925F2A6F4E300006453F /* CarsListViewController.swift in Sources */,
-				7A195CD92A7171C300510F3D /* LoadableCollectionViewCell.swift in Sources */,
+				7A195CD92A7171C300510F3D /* Loadable.swift in Sources */,
 				7A166E4C2A73814700E5B917 /* FetchPostsRequest..swift in Sources */,
 				7A195D132A72435900510F3D /* ApiError.swift in Sources */,
 				7A195CDF2A71757000510F3D /* UIView + Ext.swift in Sources */,
@@ -535,6 +554,7 @@
 				7ADE92612A6F4E460006453F /* CarsListViewModel.swift in Sources */,
 				7ADE928D2A6FE5320006453F /* MoyaPluginFactory.swift in Sources */,
 				7ADE927F2A6FE2E30006453F /* DependenciesConfiguration.swift in Sources */,
+				7A166E582A73B9AD00E5B917 /* PostView.swift in Sources */,
 				7A195D0C2A723ECB00510F3D /* MultiMoyaProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -681,8 +701,8 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -714,8 +734,8 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -765,6 +785,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		7A166E522A73B0CF00E5B917 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		7A195CCE2A71615C00510F3D /* XCRemoteSwiftPackageReference "MintLogger" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/golovkinV/MintLogger";
@@ -812,6 +840,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7A166E3D2A7365A800E5B917 /* XCRemoteSwiftPackageReference "MintRouter" */;
 			productName = MintRouter;
+		};
+		7A166E532A73B0CF00E5B917 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A166E522A73B0CF00E5B917 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
 		};
 		7A195CCF2A71615C00510F3D /* MintLogger */ = {
 			isa = XCSwiftPackageProductDependency;

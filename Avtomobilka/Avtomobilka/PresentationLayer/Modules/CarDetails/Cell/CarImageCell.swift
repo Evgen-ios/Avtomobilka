@@ -15,6 +15,8 @@ final class CarImageCell: LoadableCollectionViewCell {
     private lazy var photoImageView = UIImageView().apply {
         $0.contentMode = .scaleAspectFill
         $0.backgroundColor = .lightGray.withAlphaComponent(0.2)
+        $0.layer.cornerRadius = 16
+        $0.clipsToBounds = true
     }
     
     // MARK: - Inherited Methods
@@ -24,10 +26,6 @@ final class CarImageCell: LoadableCollectionViewCell {
         [photoImageView].forEach {
             addSubview($0)
         }
-        
-        photoImageView.layer.cornerRadius = 16
-        photoImageView.clipsToBounds = true
-        
         layoutConstraints()
         bind()
     }
@@ -41,7 +39,8 @@ final class CarImageCell: LoadableCollectionViewCell {
     
     func configure(_ model: ImageModel) {
         self.model = model
-        guard let url = URL(string: model.image500) else { return }
+        guard let url = URL(string: model.url) else { return }
+        photoImageView.load(url: url)
     }
     
     // MARK: - layoutConstraints

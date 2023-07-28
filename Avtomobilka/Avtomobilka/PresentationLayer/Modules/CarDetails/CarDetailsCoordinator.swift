@@ -15,10 +15,11 @@ class CarDetailsCoordinator: BaseCoordinator<CarDetailsViewController> {
     private var bag = CancelBag()
     
     // MARK: - Init
-    init(_ container: DIContainer, carID: Int) {
+    init(_ container: DIContainer, model: CarModelData) {
         super.init(container)
         rootViewController = CarDetailsAssembly.createModule(container)
-        rootViewController.viewModel.input.carID.send(carID)
+        rootViewController.viewModel.input.carID.send(model.id)
+        rootViewController.title = model.name
     }
     
     // MARK: - Inherited Methods

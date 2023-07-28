@@ -20,10 +20,10 @@ class CarsListCoordinator: BaseCoordinator<CarsListViewController>, BackRoute {
         self.window = window
         super.init(container)
         rootViewController = CarsListAssembly.createModule(container)
-        
+        rootViewController.title = "Avtomobilka"
         rootViewController.viewModel.input.openCarDetails.publisher
-            .sink { [weak self] carID in
-                self?.openCarDetails(carID: carID)
+            .sink { [weak self] model in
+                self?.openCarDetails(model: model)
             }
             .store(in: &bag)
     }
@@ -40,8 +40,8 @@ class CarsListCoordinator: BaseCoordinator<CarsListViewController>, BackRoute {
         window.makeKeyAndVisible()
     }
     
-    private func openCarDetails(carID: Int) {
-        let coordinator = CarDetailsCoordinator(container, carID: carID)
+    private func openCarDetails(model: CarModelData) {
+        let coordinator = CarDetailsCoordinator(container, model: model)
         coordinator.controller.hidesBottomBarWhenPushed = true
         PushRouter(target: coordinator.controller, parent: rootViewController).move()
         coordinate(to: coordinator)

@@ -29,21 +29,21 @@ final class CarDetailsViewModel {
         input.carID.publisher
             .sink { [weak self] carID in
                 guard let self = self else { return }
-                //self.getCar(carID: carID)
-                self.getPost(carID: carID)
+                self.getCar(carID: carID)
             }
             .store(in: &bag)
         
-        output.item.publisher
+        output.$item
             .sink { [weak self] item in
                 guard let self = self else { return }
-                self.output.images = item.car.images
+                guard let id = item?.car.id else { return }
+                self.getPost(carID: id)
             }
             .store(in: &bag)
     }
-    
+
     // MARK: - Private Methods
-    private func getCar(carID: Int, with posts: Bool = false) {
+    private func getCar(carID: Int) {
         self.publicationService.FetchDetailCar(carID: carID)
             .apiAnyPublisher()
             .sink { completion in
@@ -52,7 +52,8 @@ final class CarDetailsViewModel {
                 }
             } receiveValue: { [weak self] item in
                 guard let self = self else { return }
-                self.output.item = [item]
+                self.output.item = item
+                self.output.images = item.car.images
             }
             .store(in: &bag)
     }
@@ -79,22 +80,8 @@ extension CarDetailsViewModel {
     }
     
     final class Output {
-        @PublishedProperty var item: [CarDetailsModelData] = [] {
-            didSet {
-                print(item)
-            }
-        }
-        
-        @PublishedProperty var images: [ImageModel] = [] {
-            didSet {
-                print(images)
-            }
-        }
-        
-        @PublishedProperty var posts: PostsModelData? = nil {
-            didSet {
-                print(posts)
-            }
-        }
+        @PublishedProperty var item: CarDetailsModelData? = nil
+        @PublishedProperty var images: [ImageModel] = []
+        @PublishedProperty var posts: PostsModelData? = nil
     }
 }

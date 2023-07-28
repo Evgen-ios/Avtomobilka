@@ -13,12 +13,12 @@ struct PostModelData: Codable, Equatable {
     var likeCount: Int
     var createdAt: String
     var commentCount: Int
-    var img: String
+    var img: String?
     var author: AuthorModel
     var autoCount: Int?
     var mainAutoName: String?
     
-    init(id: Int, text: String, like_count: Int, created_at: String, comment_count: Int, img: String, author: AuthorModel, auto_count: Int? = nil, main_auto_name: String? = nil) {
+    init(id: Int, text: String, like_count: Int, created_at: String, comment_count: Int, img: String? = nil, author: AuthorModel, auto_count: Int? = nil, main_auto_name: String? = nil) {
         self.id = id
         self.text = text
         self.likeCount = like_count
