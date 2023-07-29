@@ -1,22 +1,17 @@
 //
-//  LikeView.swift
+//  MessageView.swift
 //  Avtomobilka
 //
-//  Created by Evgeniy Goncharov on 28.07.2023.
+//  Created by Evgeniy Goncharov on 29.07.2023.
 //
 
 import UIKit
 
-final class LikeView: LoadableView {
+final class MessageView: LoadableView {
     
     // MARK: - Properties
-    private lazy var like = UIButton().apply {
-        $0.setImage(UIImage(named: "grayHeart"), for: .normal)
-        $0.setImage(UIImage(named: "redHeart"), for: .selected)
-        
-        $0.addTapGestureRecognizer { [weak self] in
-            self?.likeTap()
-        }
+    private lazy var message = UIButton().apply {
+        $0.setImage(UIImage(named: "grayMessage"), for: .normal)
     }
     
     private lazy var countViev = UILabel().apply {
@@ -29,7 +24,7 @@ final class LikeView: LoadableView {
     
     // MARK: - Inherited Methods
     override func setup() {
-        [like, countViev].forEach {
+        [message, countViev].forEach {
             addSubview($0)
         }
         
@@ -39,24 +34,24 @@ final class LikeView: LoadableView {
     
     // MARK: - Methods
     func configure(model: PostModelData) {
-        countViev.text = String(model.likeCount)
+        countViev.text = String(model.commentCount)
     }
     
     private func likeTap() {
-        self.like.isHighlighted.toggle()
+        self.message.isHighlighted.toggle()
     }
     
     // MARK: - layoutConstraints
     private func layoutConstraint() {
-        like.snp.makeConstraints {
+        message.snp.makeConstraints {
             $0.size.equalTo(24)
             $0.top.equalToSuperview()
             $0.left.equalToSuperview()
         }
         
         countViev.snp.makeConstraints {
-            $0.centerY.equalTo(like.snp.centerY)
-            $0.left.equalTo(like.snp.right).offset(4)
+            $0.centerY.equalTo(message.snp.centerY)
+            $0.left.equalTo(message.snp.right).offset(4)
         }
     }
 }

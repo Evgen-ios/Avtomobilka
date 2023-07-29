@@ -40,10 +40,11 @@ final class PostView: LoadableView {
     }
     
     private lazy var likeView = LikeView()
+    private lazy var messageView = MessageView()
     
     // MARK: - Inherited Methods
     override func setup() {
-        [avatar, name, message, time, likeView, separatedView].forEach {
+        [avatar, name, message, time, likeView, messageView, separatedView].forEach {
             addSubview($0)
         }
         
@@ -55,6 +56,7 @@ final class PostView: LoadableView {
         guard let model else { return }
         setAvatar(model: model.author)
         likeView.configure(model: model)
+        messageView.configure(model: model)
         name.text = model.author.username
         message.text = model.text
         time.text = model.createdAt
@@ -97,6 +99,12 @@ final class PostView: LoadableView {
         likeView.snp.makeConstraints {
             $0.top.equalTo(message.snp.bottom).offset(8)
             $0.left.equalToSuperview().inset(8)
+            $0.height.equalTo(24)
+        }
+        
+        messageView.snp.makeConstraints {
+            $0.centerY.equalTo(likeView.snp.centerY)
+            $0.left.equalTo(likeView.snp.leftMargin).inset(50)
             $0.height.equalTo(24)
         }
         

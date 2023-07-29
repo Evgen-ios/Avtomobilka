@@ -47,6 +47,7 @@
 		7A195D2B2A72AF0500510F3D /* CarDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195D2A2A72AF0500510F3D /* CarDetailsViewModel.swift */; };
 		7A195D302A73499100510F3D /* CarImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A195D2F2A73499100510F3D /* CarImageCell.swift */; };
 		7A86F0302A7408F800AECA56 /* LikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A86F02F2A7408F800AECA56 /* LikeView.swift */; };
+		7A8F8B872A7544600088008F /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8F8B862A7544600088008F /* MessageView.swift */; };
 		7ADE92362A6EA7EB0006453F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADE92352A6EA7EB0006453F /* AppDelegate.swift */; };
 		7ADE923F2A6EA7ED0006453F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ADE923E2A6EA7ED0006453F /* Assets.xcassets */; };
 		7ADE92422A6EA7ED0006453F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADE92402A6EA7ED0006453F /* LaunchScreen.storyboard */; };
@@ -113,6 +114,7 @@
 		7A86F0392A74245200AECA56 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3.png; path = Screenshots/3.png; sourceTree = SOURCE_ROOT; };
 		7A86F03A2A74245300AECA56 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = Screenshots/1.png; sourceTree = SOURCE_ROOT; };
 		7A86F03B2A74245300AECA56 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = Screenshots/2.png; sourceTree = SOURCE_ROOT; };
+		7A8F8B862A7544600088008F /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		7ADE92322A6EA7EB0006453F /* Avtomobilka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avtomobilka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ADE92352A6EA7EB0006453F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ADE923E2A6EA7ED0006453F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				7A166E502A73A03D00E5B917 /* AuthorView.swift */,
 				7A166E572A73B9AD00E5B917 /* PostView.swift */,
 				7A86F02F2A7408F800AECA56 /* LikeView.swift */,
+				7A8F8B862A7544600088008F /* MessageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -493,6 +496,7 @@
 				7A195D1C2A72780700510F3D /* XCRemoteSwiftPackageReference "UIScrollView-InfiniteScroll" */,
 				7A166E3D2A7365A800E5B917 /* XCRemoteSwiftPackageReference "MintRouter" */,
 				7A166E522A73B0CF00E5B917 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				7A8F8B832A7536F40088008F /* XCRemoteSwiftPackageReference "CombineCocoa" */,
 			);
 			productRefGroup = 7ADE92332A6EA7EB0006453F /* Products */;
 			projectDirPath = "";
@@ -569,6 +573,7 @@
 				7A195D132A72435900510F3D /* ApiError.swift in Sources */,
 				7A195CDF2A71757000510F3D /* UIView + Ext.swift in Sources */,
 				7ADE928B2A6FE5320006453F /* Session + Ext.swift in Sources */,
+				7A8F8B872A7544600088008F /* MessageView.swift in Sources */,
 				7ADE92612A6F4E460006453F /* CarsListViewModel.swift in Sources */,
 				7ADE928D2A6FE5320006453F /* MoyaPluginFactory.swift in Sources */,
 				7ADE927F2A6FE2E30006453F /* DependenciesConfiguration.swift in Sources */,
@@ -825,6 +830,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
+			};
+		};
+		7A8F8B832A7536F40088008F /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineCocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
 			};
 		};
 		7ADE92652A6F528E0006453F /* XCRemoteSwiftPackageReference "DITranquillity" */ = {

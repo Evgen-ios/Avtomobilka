@@ -78,6 +78,9 @@ final class CarDetailsViewController: BaseViewController {
         
         scrollView.addSubview(containerView)
         view.addSubview(scrollView)
+        
+        stackView.isUserInteractionEnabled = true
+        stackView.isMultipleTouchEnabled = true
     }
     
     private func bindViewToViewModel() {}
